@@ -2,7 +2,7 @@
 
 _More powerful than the spiky blue shell_
 
-## Challenges
+## Challenges, Part 1
 
 Challenges within each section are meant to be solved in order.
 
@@ -38,18 +38,27 @@ Challenges within each section are meant to be solved in order.
 1.  Set a variable `NAME` equal to your first name, then print its value
     -   `NAME=Firstname`, then `echo $NAME`
 1.  Set a variable `FULL_NAME` equal to your full name, then print its value
-    -   `FULL_NAME="Firstname Lastname"`, then `echo $FULL_NAME`
+    -   `FULL_NAME="Firstname Lastname"` (quotes matter), then `echo $FULL_NAME`
 1.  Print all environment variables (names and values)
     -   `env`
 1.  Make an alias named `hello` that prints `Hello world`
     -   `alias hello='echo "Hello world"'`
+1.  Make an alias named `gocode` that navigates to your code directory
+    -   `alias gocode='cd ~/MakeSchool/Code'`
 1.  Print all aliases (names and values)
     -   `alias`
-1.  Print what options a command accepts, like `bash`
+
+### Getting Help
+
+1.  Print what options a command accepts, like `bash` or `python`
     -   `bash --help`
+    -   `python --help`
 1.  Read the manual for a command, like `echo` or `ls`
     -   `man echo`
     -   `man ls`
+1.  Print the file path to a command, like `bash` or `python`
+    -   `which bash`
+    -   `which python`
 
 ### Files
 
@@ -73,17 +82,18 @@ Challenges within each section are meant to be solved in order.
     -   `mv puppies.txt shelter`
 1.  Copy the file `cats.txt` to `kittens.txt` inside `shelter`
     -   `cp cats.txt shelter/kittens.txt`
-1.  Try to remove the directory `shelter` (this should fail)
-    -   `rmdir shelter`
 1.  List the files within the directory `shelter`
     -   `ls shelter`
 1.  Count the words in all `.txt` files inside `shelter`
     -   `wc shelter/*.txt`
+1.  Try to remove the directory `shelter` (this should fail)
+    -   `rmdir shelter` (this should fail)
 1.  Remove all `.txt` files inside `shelter`
     -   `rm -i shelter/*.txt`
 1.  Remove the directory `shelter` (this should succeed)
     -   `rmdir shelter`
-1.  Now cry because you just deleted those tiny animals
+    -   `rm -iR shelter` (`-R` specifies recursive file removal)
+1.  Now cry because you just deleted those poor tiny animals
     -   `:'-(`
 
 ### Permissions
@@ -108,6 +118,10 @@ Challenges within each section are meant to be solved in order.
     -   `sudo !!` (but be careful!)
 1.  List the permissions (and owner) of the file `cats.txt` again
     -   `ls -l cats.txt`
+
+## Challenges, Part 2
+
+These challenges utilize more sophisticated Unix utilities. Challenges within each section are meant to be solved in order.
 
 ### Streams
 
